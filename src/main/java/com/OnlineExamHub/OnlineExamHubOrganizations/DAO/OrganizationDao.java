@@ -1,11 +1,12 @@
 package com.OnlineExamHub.OnlineExamHubOrganizations.DAO;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
 
-import com.OnlineExamHub.OnlineExamHubOrganizations.Model.organizationModel;
+import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.OrganizationDTO;
+import com.OnlineExamHub.OnlineExamHubOrganizations.Model.OrganizationModel;
 
-public interface OrganizationDao extends JpaRepository<organizationModel, Long> {
+public interface OrganizationDao {
 
-//	List<organizationDTO> getOrganizationList();
+	List<OrganizationModel> getOrganizationList();
 
 }

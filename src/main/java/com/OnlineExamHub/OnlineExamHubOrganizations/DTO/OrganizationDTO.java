@@ -15,7 +15,7 @@ import lombok.ToString;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class organizationDTO {
+public class OrganizationDTO {
 	private Long orgId;
 	private String orgName;
 	private String orgEmail;

@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.OnlineExamHub.OnlineExamHubOrganizations.DAO.OrganizationDao;
-import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.organizationDTO;
-import com.OnlineExamHub.OnlineExamHubOrganizations.Model.organizationModel;
+import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.OrganizationDTO;
+import com.OnlineExamHub.OnlineExamHubOrganizations.Model.OrganizationModel;
 import com.OnlineExamHub.OnlineExamHubOrganizations.Services.OrganizationService;
 
 import lombok.Builder;
@@ -22,13 +22,11 @@ public class OrganizationServiceImpl implements OrganizationService {
 	
 
 	@Override
-	public List<organizationDTO> getOrganizationList() {
+	public List<OrganizationDTO> getOrganizationList() {
 		
-		List<organizationModel> organizationList = organizationDao.findAll();
+		List<OrganizationModel> organizationList = organizationDao.getOrganizationList();
 		
 		System.out.println(organizationList);
-		System.out.println("666666 " + organizationDao.count());
-		
 		return null;
 	}
 

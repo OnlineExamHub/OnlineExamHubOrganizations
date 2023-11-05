@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.organizationDTO;
+import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.OrganizationDTO;
 import com.OnlineExamHub.OnlineExamHubOrganizations.Services.OrganizationService;
 
 @RestController
@@ -18,10 +18,10 @@ public class OrganizationController {
 	OrganizationService organizationService;
 	
 	@GetMapping
-	public List<organizationDTO> organization() {
+	public List<OrganizationDTO> organization() {
 		System.out.println("in orginization get method");
 		
-		List<organizationDTO> allOrganizationList = organizationService.getOrganizationList();
+		List<OrganizationDTO> allOrganizationList = organizationService.getOrganizationList();
 		
 		return null;
 	}

@@ -2,10 +2,10 @@ package com.OnlineExamHub.OnlineExamHubOrganizations.Services;
 
 import java.util.List;
 
-import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.organizationDTO;
+import com.OnlineExamHub.OnlineExamHubOrganizations.DTO.OrganizationDTO;
 
 public interface OrganizationService {
 
-	List<organizationDTO> getOrganizationList();
+	List<OrganizationDTO> getOrganizationList();
 
 }
